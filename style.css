@@ -1,0 +1,52 @@
+
+html{
+  background: url(images/circus-2.png) no-repeat center center;
+  background-size: 100%;
+  background-position: 0 100vh;
+}
+
+
+body{
+  margin: 0;
+  width: 100%;
+  height: 200vh;
+}
+
+video{
+  width: 100%;
+  
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100vh 30vh repeat(2, 140vh);
+  grid-column-gap: 8px;
+  grid-row-gap: 0px;
+  width: 100%;
+
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 4; }
+  .div2 { grid-area: 2 / 1 / 3 / 4; place-self: center; margin-bottom: -25%; }
+  .div3 { grid-area: 3 / 1 / 4 / 2; margin-top: 90px;}
+  .div4 { grid-area: 3 / 2 / 4 / 3; }
+  .div5 { grid-area: 3 / 3 / 4 / 4; margin-top: 270px;}
+  .div6 { grid-area: 4 / 1 / 5 / 2; margin-top: 190px;}
+  .div7 { grid-area: 4 / 2 / 5 / 3; margin-top: -150px;}
+  .div8 { grid-area: 4 / 3 / 5 / 4; margin-top: 400px;}
+      
+   .polaroid{
+      width: 100%;
+
+    }
+
+    .polaroid-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+
+    }
+      
