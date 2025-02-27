@@ -24,7 +24,7 @@ video{
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100vh 50vh repeat(2, 140vh);
+  grid-template-rows: 100vh 10vh repeat(2, 140vh);
   grid-column-gap: 8px;
   grid-row-gap: 0px;
   width: 100%;
@@ -89,5 +89,31 @@ video{
       object-fit: contain;
   }
 
+  .atropos {
+    width: 100%;
+    height: auto;
+}
+
+.atropos-inner {
+    border-radius: 20px;
+}
+
+.card-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-element {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+et ca devrait etre bon
 
 

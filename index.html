@@ -6,6 +6,7 @@
     <link href="style.css" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css">
+    
 </head>
 <body>
 
@@ -18,48 +19,98 @@
                 </div>
               </div>
   
-            <div class="div3">
-              <div class="gallery-item">
-              <img class="polaroid" src="images/LAdamepoilue.png" alt="polaroid" data-overlay="images/lafemmeabarbe2.png">
-            </div>
-            </div>
-
-            <div class="div5"> </div>
-
-            <div class="div6">
-              <div class="gallery-item">
-              <img class="polaroid" src="images/sainteculdejatte.png" alt="polaroid" data-overlay="images/sainteculdejatte2.png">
+              <div class="div3">
+                <div class="atropos my-atropos">
+                  <div class="atropos-scale">
+                    <div class="atropos-rotate">
+                      <div class="atropos-inner">
+                        <div class="gallery-item">
+                          <img class="polaroid" src="images/LAdamepoilue.png" alt="polaroid" data-overlay="images/lafemmeabarbe2.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <div class="div7"> 
-              <div class="gallery-item">
-              <img class="polaroid" src="images/SaintEdouardLeBiscornu.png" alt="polaroid" data-overlay="images/saintedouardlebiscornu2.png">
+              
+              <div class="div6">
+                <div class="atropos my-atropos">
+                  <div class="atropos-scale">
+                    <div class="atropos-rotate">
+                      <div class="atropos-inner">
+                        <div class="gallery-item">
+                          <img class="polaroid" src="images/sainteculdejatte.png" alt="polaroid" data-overlay="images/sainteculdejatte2.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            
-            <div class="div8"> 
-              <div class="gallery-item"> 
-              <img class="polaroid" src="images/Monseigneurlaffreux.png" alt="polaroid" data-overlay="images/monseigneurlaffreux copie.png">
-            </div>
-            </div>
-
-            <div class="div9"> 
-              <div class="gallery-item">
-              <img class="polaroid" src="images/Saintehumilite.png" alt="polaroid" data-overlay="images/saintehumilité.png"></div>
-            </div>
-            </div>
-            
-           <div class="overlay">
-              <div class="overlay-content">
-                <img src="" alt="Image agrandie">
-          
+              
+              <div class="div7">
+                <div class="atropos my-atropos">
+                  <div class="atropos-scale">
+                    <div class="atropos-rotate">
+                      <div class="atropos-inner">
+                        <div class="gallery-item">
+                          <img class="polaroid" src="images/SaintEdouardLeBiscornu.png" alt="polaroid" data-overlay="images/saintedouardlebiscornu2.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-        </div>
+              
+              <div class="div8">
+                <div class="atropos my-atropos">
+                  <div class="atropos-scale">
+                    <div class="atropos-rotate">
+                      <div class="atropos-inner">
+                        <div class="gallery-item">
+                          <img class="polaroid" src="images/Monseigneurlaffreux.png" alt="polaroid" data-overlay="images/monseigneurlaffreux copie.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="div9">
+                <div class="atropos my-atropos">
+                  <div class="atropos-scale">
+                    <div class="atropos-rotate">
+                      <div class="atropos-inner">
+                        <div class="gallery-item">
+                          <img class="polaroid" src="images/Saintehumilite.png" alt="polaroid" data-overlay="images/saintehumilitÃ©.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+        <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js"></script>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".my-atropos").forEach((element) => {
+        Atropos({
+        el: element,
+        activeOffset: 40,
+        shadowScale: 1.05,
+        highlight: true,
+        rotateXMax: 15,
+        rotateYMax: 15,
+        stretchX: 40,
+        stretchY: 40,
+    });
+  });
+});
+
+        </script>
 
         <script src="parallax3web/script.js"></script>
         <script src="script.js"></script>
   
   </body>
-
-</html>
