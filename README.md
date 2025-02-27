@@ -5,14 +5,14 @@ Le projet consiste d'intégrer la parallax sur un projet WEB.
 Mon projet est sur le thème des "horreurs" de l'époque. Soyons clairs, ce sont des personnes atteintes de maladies ou de malformations. J'ai utilisé l'effet Atropos pour ma parallax, afin d'apporter un relief aux images.
 
 Logiciels utilisés :
-Illustrator : image fixe du background
-Photoshop : assemblage photo + texte
-After Effect : animation du premier écran
+Illustrator : image fixe du background /
+Photoshop : assemblage photo + texte /
+After Effect : animation du premier écran /
 AdobeStock : chapiteau
 
-Typographies :
+Typographie :
 Velvetyne : https://velvetyne.fr/fonts/ouroboros/
 
 Amélioration :
-- Je voulais ajouter un overlay sur chaque image pour ajouter une description du "monstre"
+- Je voulais ajouter un overlay cliquable sur chaque image pour ajouter une description du "monstre"
 
