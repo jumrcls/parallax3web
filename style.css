@@ -2,7 +2,7 @@
 html{
   background: url(images/circus-2.png) no-repeat center center;
   background-size: 100%;
-  background-position: 0 100vh;
+  background-position: 0 80vh;
 }
 
 
@@ -16,37 +16,78 @@ video{
   width: 100%;
   
 }
-
+.img {
+  width:50px;
+  justify-content: center;
+  align-items: center;
+}
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100vh 30vh repeat(2, 140vh);
+  grid-template-rows: 100vh 50vh repeat(2, 140vh);
   grid-column-gap: 8px;
   grid-row-gap: 0px;
   width: 100%;
 
   }
   
-  .div1 { grid-area: 1 / 1 / 2 / 4; }
-  .div2 { grid-area: 2 / 1 / 3 / 4; place-self: center; margin-bottom: -25%; }
-  .div3 { grid-area: 3 / 1 / 4 / 2; margin-top: 90px;}
-  .div4 { grid-area: 3 / 2 / 4 / 3; }
-  .div5 { grid-area: 3 / 3 / 4 / 4; margin-top: 270px;}
-  .div6 { grid-area: 4 / 1 / 5 / 2; margin-top: 190px;}
-  .div7 { grid-area: 4 / 2 / 5 / 3; margin-top: -150px;}
-  .div8 { grid-area: 4 / 3 / 5 / 4; margin-top: 400px;}
-      
+  .div1 { grid-area: 1 / 1 / 2 / 4 ;}
+  .div2 { grid-area: 2 / 1 / 3 / 4; margin-top : 170px; margin-left: 500px;}
+  .div3 { grid-area: 3 / 1 / 4 / 2; margin-top: 500px; margin-left: 50px;}
+  .div5 { grid-area: 3 / 2 / 4 / 3; }
+  .div6 { grid-area: 3 / 3 / 4 / 4; margin-top: 450px; margin-left: 55px; width: 420px;}
+  .div7 { grid-area: 4 / 1 / 5 / 2; margin-top: 170px; margin-left: 50px;}
+  .div8 { grid-area: 4 / 2 / 5 / 3;  margin-top: -100px; margin-left: 50px; width:425px;}
+  .div9 { grid-area: 4 / 3 / 5 / 4; margin-top: 300px; width:420px; margin-left: 50px;}
+   
+  
+
    .polaroid{
-      width: 100%;
+      width: 90%;
 
     }
 
-    .polaroid-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+.polaroid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ajuste mieux l’image */
+  height: 100%;
+  width: 100%;
+}
+  
+  .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
       height: 100%;
-      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+  }
+  
+  .overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+  }
+  
+  .overlay-content {
+      max-width: 90%;
+      max-height: 90vh;
+      margin: auto;
+  }
+  
+  .overlay-content img {
+      max-width: 100%;
+      max-height: 90vh;
+      object-fit: contain;
+  }
 
-    }
-      
+
+
